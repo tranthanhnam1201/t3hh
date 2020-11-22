@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    position: relative;
+    max-width: 650px;
+    height: 650px;
+    background-color: #edf7f9;
+    margin: 30px auto;
+}
+.card {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    left: 50px;
+    background-color: #b1dbe7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.card__img {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    background-color: #b1dbe7;
+}
+.card__img > img {
+    width: 100%;
+}
+.card__hover {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 550px;
+    height: 400px;
+    background-color: #506367;
+    opacity: 0;
+}
+.card__hover p {
+    line-height: 300px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.container :hover .card__hover {
+    opacity: 0.5;
+}
+.container :hover .card__hover .card__hover--list {
+    opacity: 1;
+}
+.card__icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 50px;
+    border-radius: 50px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.card__icon > i {
+    line-height: 100px;
+    margin-left: 27px;
+    font-size: 50px;
+}
+.card__content {
+    position: absolute;
+    width: 550px;
+    height: 150px;
+    left: 0;
+    top: 400px;
+    background-color: white;
+}
+.card__content > h3 {
+    line-height: 150px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 45px;
+}
